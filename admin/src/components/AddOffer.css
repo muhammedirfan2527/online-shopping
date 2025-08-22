@@ -1,0 +1,105 @@
+.add-offer {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-offer h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.add-offer form .form-div {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-offer label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.add-offer select,
+.add-offer input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-offer select:focus,
+.add-offer input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Percent input row */
+.percent-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+
+.percent-wrapper input {
+  flex: 1;
+  min-width: 50px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.percent-wrapper span {
+  font-weight: 500;
+  color: #34495e;
+}
+
+/* Submit button */
+.add-offer button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-offer button:hover {
+  background: linear-gradient(135deg, #34d058, #218838);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .add-offer {
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+
+  .add-offer h2 {
+    font-size: 1.4rem;
+  }
+
+  .add-offer select,
+  .add-offer input,
+  .add-offer button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}

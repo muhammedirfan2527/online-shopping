@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 1000;
+}
+
+.navbar-logo .navbar-link {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo .navbar-link:hover {
+  color: #0056b3;
+}
+
+.navbar-search input {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  width: 280px;
+  transition: all 0.3s ease;
+}
+
+.navbar-search input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media(max-width:713px){
+  .navbar-search input{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 670px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    /* padding: 1rem; */
+  }
+  .navbar-logo{
+    width: 20%;
+    /* border: 1px solid black; */
+  }
+  .navbar-search input {
+    width: 100%;
+    margin-left: -20px;
+    /* border: 1px solid black; */
+    /* margin: 0.5rem 0; */
+  }
+
+  .navbar-left {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+  }
+}
+@media (max-width:430px) {
+    .navbar-logo{
+      width: 40%;
+      margin-top: -50px;
+      /* border: 1px solid black; */
+    }
+    .navbar-search input {
+      margin-top: 100px;
+      margin-left: -95px;
+      width: 300px;
+      height: 30px;
+    }
+    .navbar-left{
+      display: flex;
+      justify-content: end;
+      width: 140%;
+      margin-top: -50px;
+      margin-left: -210px;
+      /* border: 1px solid black; */
+    }
+}

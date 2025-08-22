@@ -1,0 +1,104 @@
+.add-category {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-category h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.add-category-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.add-category-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.add-category-form button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-category-form button:hover {
+  background: linear-gradient(135deg, #34d058, #218838);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Tablets / small desktops */
+@media (max-width: 713px) {
+  .add-category {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  .add-category h2 {
+    font-size: 1.4rem;
+  }
+  .add-category-form input {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .add-category-form button {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 670px) {
+  .add-category {
+    max-width: 350px;
+    padding: 1.2rem;
+  }
+  .add-category h2 {
+    font-size: 1.3rem;
+  }
+  .add-category-form input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .add-category-form button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 430px) {
+  .add-category {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  .add-category h2 {
+    font-size: 1.2rem;
+  }
+  .add-category-form input,
+  .add-category-form button {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
+

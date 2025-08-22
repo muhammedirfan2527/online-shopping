@@ -1,0 +1,254 @@
+{
+  "users": [
+
+  ],
+  "category": [
+    {
+      "name": "moblie",
+      "createdAt": "2025-08-21T18:49:05.469Z",
+      "id": 1
+    },
+    {
+      "name": "laptop",
+      "createdAt": "2025-08-21T19:01:54.227Z",
+      "id": 2
+    },
+    {
+      "name": "tv",
+      "createdAt": "2025-08-21T19:11:16.946Z",
+      "id": 3
+    },
+    {
+      "name": "smart watch",
+      "createdAt": "2025-08-21T19:17:22.464Z",
+      "id": 4
+    },
+    {
+      "name": "true wireless earbuds (tws)",
+      "createdAt": "2025-08-21T19:25:00.895Z",
+      "id": 5
+    },
+    {
+      "name": "digital camera",
+      "createdAt": "2025-08-21T19:36:33.526Z",
+      "id": 6
+    },
+    {
+      "name": "gaming controller",
+      "createdAt": "2025-08-21T19:45:34.781Z",
+      "id": 7
+    },
+    {
+      "name": "wi-fi router",
+      "createdAt": "2025-08-21T19:47:01.347Z",
+      "id": 8
+    },
+    {
+      "name": "gaming console",
+      "createdAt": "2025-08-21T19:48:18.828Z",
+      "id": 9
+    },
+    {
+      "name": "curved monitor (pc)",
+      "createdAt": "2025-08-21T19:53:25.645Z",
+      "id": 10
+    },
+    {
+      "name": "all-in-one inktank printer",
+      "createdAt": "2025-08-21T19:54:59.658Z",
+      "id": 11
+    }
+  ],
+  "products": [
+    {
+      "category": "moblie",
+      "name": "IQOO Z10x",
+      "brand": "iQOO",
+      "price": 13890,
+      "image": "1755802336960_photo_15_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T18:52:17.334Z",
+      "id": 1
+    },
+    {
+      "category": "moblie",
+      "name": "Apple iphone 16",
+      "brand": "Iphone",
+      "price": 78998,
+      "image": "1755802566521_photo_3_2025-08-22_00-16-59.jpg",
+      "createdAt": "2025-08-21T18:56:06.897Z",
+      "id": 2
+    },
+    {
+      "category": "moblie",
+      "name": "OPPO F27 Pro+",
+      "brand": "OPPO",
+      "price": 20999,
+      "image": "1755802667863_photo_19_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T18:57:47.866Z",
+      "id": 3
+    },
+    {
+      "category": "moblie",
+      "name": "Motorola G85 5G",
+      "brand": "MOTOROLA",
+      "price": 17999,
+      "image": "1755802752273_photo_17_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T18:59:12.333Z",
+      "id": 4
+    },
+    {
+      "category": "laptop",
+      "name": "Asus Chromebook intel Celeron Dual N4500",
+      "brand": "ASUS",
+      "price": 15990,
+      "image": "1755803418009_photo_4_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:10:18.155Z",
+      "id": 5
+    },
+    {
+      "category": "tv",
+      "name": "Around KA242Y (or SB2 series)—23.8\" Full HD, IPS, thin bezel, FreeSync",
+      "brand": "Acer",
+      "price": 8999,
+      "image": "1755803726896_photo_1_2025-08-22_00-16-59.jpg",
+      "createdAt": "2025-08-21T19:15:27.049Z",
+      "id": 6
+    },
+    {
+      "category": "smart watch",
+      "name": "GOOD WATCH‑Invincible Plus ",
+      "brand": "Noise",
+      "price": 1899,
+      "image": "1755804098336_photo_13_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:21:38.556Z",
+      "id": 7
+    },
+    {
+      "category": "true wireless earbuds (tws)",
+      "name": "boAt Airdopes 141 (very popular model with same glossy case & stem design)",
+      "brand": "boAt",
+      "price": 1499,
+      "image": "1755804367097_photo_6_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:26:07.150Z",
+      "id": 8
+    },
+    {
+      "category": "laptop",
+      "name": "Looks like the Apple MacBook Pro 14-inch (2021 or newer, with M1 Pro / M2 Pro chip)",
+      "brand": "Apple",
+      "price": 199900,
+      "image": "1755804526879_photo_2_2025-08-22_00-16-59.jpg",
+      "createdAt": "2025-08-21T19:28:47.062Z",
+      "id": 9
+    },
+    {
+      "category": "smart watch",
+      "name": "NoiseFit Halo (round AMOLED display, crown with Noise “N” logo)",
+      "brand": "Noise",
+      "price": 2499,
+      "image": "1755804616245_photo_18_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:30:16.307Z",
+      "id": 10
+    },
+    {
+      "category": "digital camera",
+      "name": "Canon EOS R100",
+      "brand": "Canon",
+      "price": 29999,
+      "image": "1755805176795_photo_9_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:39:37.036Z",
+      "id": 11
+    },
+    {
+      "category": "tv",
+      "name": "iFFALCON U65 4K UHD 55\" Television",
+      "brand": "iFFALCON ",
+      "price": 34999,
+      "image": "1755805312606_photo_23_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:41:52.727Z",
+      "id": 12
+    },
+    {
+      "category": "gaming controller",
+      "name": "PlayStation 5 DualSense Wireless Controller - Grey Camouflage",
+      "brand": "Sony ",
+      "price": 7999,
+      "image": "1755805594932_photo_29_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:46:35.048Z",
+      "id": 13
+    },
+    {
+      "category": "wi-fi router",
+      "name": "D-Link EXO AX5400 Mesh Wi-Fi 6 Router (DIR-X5460)",
+      "brand": "D-Link",
+      "price": 9998,
+      "image": "1755805672094_photo_11_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:47:52.133Z",
+      "id": 14
+    },
+    {
+      "category": "gaming console",
+      "name": "PlayStation 5 (PS5) Console",
+      "brand": "Sony ",
+      "price": 45999,
+      "image": "1755805737765_photo_31_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:48:57.847Z",
+      "id": 15
+    },
+    {
+      "category": "laptop",
+      "name": "Dell Inspiron 14 7441 2-in-1 Laptop (or a similar model with an Intel Core Ultra 5 processor)",
+      "brand": " Dell Technologies",
+      "price": 69999,
+      "image": "1755805900965_photo_10_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:51:41.083Z",
+      "id": 16
+    },
+    {
+      "category": "curved monitor (pc)",
+      "name": "Samsung 24-inch Curved Full HD LED Monitor (LC24F390FHWXXL or similar model)",
+      "brand": "Samsung",
+      "price": 14499,
+      "image": "1755806071926_photo_26_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:54:32.044Z",
+      "id": 17
+    },
+    {
+      "category": "all-in-one inktank printer",
+      "name": " Epson EcoTank L3250",
+      "brand": " Epson",
+      "price": 16999,
+      "image": "1755806194122_photo_12_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:56:34.191Z",
+      "id": 18
+    },
+    {
+      "category": "gaming controller",
+      "name": "PlayStation 5 DualSense Wireless Controller - Cosmic Red",
+      "brand": "Sony ",
+      "price": 6999,
+      "image": "1755806320084_photo_30_2025-08-22_00-17-41.jpg",
+      "createdAt": "2025-08-21T19:58:40.182Z",
+      "id": 19
+    }
+  ],
+  "offer": [
+    {
+      "id": 1755802811421,
+      "name": "IQOO Z10x",
+      "offer": "50"
+    },
+    {
+      "id": 1755895309783,
+      "name": "Apple iphone 16",
+      "offer": "10"
+    }
+  ],
+  "cart": [],
+  "wishlist": [
+
+  ],
+  "order": [
+    
+  ]
+}
