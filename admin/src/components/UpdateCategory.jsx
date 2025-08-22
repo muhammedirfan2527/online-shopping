@@ -12,7 +12,7 @@ const UpdateCategory = () => {
   // Fetch product by ID
     const fetchInfo = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/category/${id}`);
+        const res = await fetch(`https://online-shopping-lmg9.onrender.com/category/${id}`);
         const data = await res.json();
         setCategory(data);
       } catch (error) {
@@ -33,7 +33,7 @@ const UpdateCategory = () => {
     e.preventDefault()
 
     try {
-      const response = await fetch(`http://localhost:5000/category/${id}`, {
+      const response = await fetch(`https://online-shopping-lmg9.onrender.com/category/${id}`, {
         method: 'PATCH',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(category)
