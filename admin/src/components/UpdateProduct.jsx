@@ -22,7 +22,7 @@ const [categories, setCategories] = useState([])
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/category")
+        const res = await fetch("https://online-shopping-lmg9.onrender.com/category")
         const data = await res.json()
         setCategories(data)
       } catch (error) {
@@ -34,7 +34,7 @@ const [categories, setCategories] = useState([])
   // Fetch product by ID
   const fetchInfo = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/products/${id}`);
+      const res = await fetch(`https://online-shopping-lmg9.onrender.com/products/${id}`);
       const data = await res.json();
       setProduct(data);
     } catch (error) {
@@ -68,7 +68,7 @@ const [categories, setCategories] = useState([])
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/products/${id}`, {
+      const response = await fetch(`https://online-shopping-lmg9.onrender.com/products/${id}`, {
         method: "PATCH",
         body: formData
       });
@@ -129,7 +129,7 @@ const [categories, setCategories] = useState([])
           {image ? (
             <img src={URL.createObjectURL(image)} alt="preview" width="120" />
           ) : product.image ? (
-            <img src={`http://localhost:5000/images/${product.image}`} alt="current" width="120" />
+            <img src={`https://online-shopping-lmg9.onrender.com/images/${product.image}`} alt="current" width="120" />
           ) : null}
         </div>
 
