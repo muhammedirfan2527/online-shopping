@@ -28,7 +28,7 @@ const StoreContextProvider = (props) => {
       if (!email) return;
 
       try {
-        const res = await fetch(`http://localhost:5000/wishlist?userEmail=${email}`);
+        const res = await fetch(`https://online-shopping-lmg9.onrender.com/wishlist?userEmail=${email}`);
         const data = await res.json();
         setFavorite(data.length ? data[0].items : []);
       } catch (err) {
@@ -41,7 +41,7 @@ const StoreContextProvider = (props) => {
   // Fetch products
   const fetchInfo = async () => {
     try {
-      const response = await fetch("http://localhost:5000/products");
+      const response = await fetch("https://online-shopping-lmg9.onrender.com/products");
       if (response.ok) {
         const data = await response.json();
         setAllproduct(data);
@@ -56,7 +56,7 @@ const StoreContextProvider = (props) => {
   const fetchCart = async (userEmail) => {
     if (!userEmail) return;
     try {
-      const res = await fetch(`http://localhost:5000/cart?userEmail=${userEmail}`);
+      const res = await fetch(`https://online-shopping-lmg9.onrender.com/cart?userEmail=${userEmail}`);
       const data = await res.json();
       setCart(data.length ? data[0] : null);
     } catch (err) {
@@ -70,7 +70,7 @@ const StoreContextProvider = (props) => {
   useEffect(() => {
   const getOffer = async () => {
     try {
-      const res = await fetch("http://localhost:5000/offer");
+      const res = await fetch("https://online-shopping-lmg9.onrender.com/offer");
       const data = await res.json();
       setOffer(data);
     } catch (err) {
@@ -134,7 +134,7 @@ const getDiscountedPrice = (product) => {
         total: updatedItems.reduce((sum, i) => sum + Number(priceToUse) * i.quantity, 0) 
       };
 
-      await fetch(`http://localhost:5000/cart/${cart.id}`, {
+      await fetch(`https://online-shopping-lmg9.onrender.com/cart/${cart.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedCart),
@@ -147,7 +147,7 @@ const getDiscountedPrice = (product) => {
         items: [{ productId: product.id, name: product.name, price: priceToUse, quantity: 1 }],
         total: priceToUse,
       };
-      const res = await fetch("http://localhost:5000/cart", {
+      const res = await fetch("https://online-shopping-lmg9.onrender.com/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newCart),
@@ -166,7 +166,7 @@ const getDiscountedPrice = (product) => {
     );
     const updatedCart = { ...cart, items: updatedItems, total: updatedItems.reduce((sum, i) => sum + Number(i.price) * i.quantity, 0) };
     setCart(updatedCart);
-    await fetch(`http://localhost:5000/cart/${cart.id}`, {
+    await fetch(`https://online-shopping-lmg9.onrender.com/cart/${cart.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedCart),
@@ -181,7 +181,7 @@ const getDiscountedPrice = (product) => {
       .filter((i) => i.quantity > 0);
     const updatedCart = { ...cart, items: updatedItems, total: updatedItems.reduce((sum, i) => sum + Number(i.price) * i.quantity, 0) };
     setCart(updatedCart);
-    await fetch(`http://localhost:5000/cart/${cart.id}`, {
+    await fetch(`https://online-shopping-lmg9.onrender.com/cart/${cart.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedCart),
@@ -192,7 +192,7 @@ const getDiscountedPrice = (product) => {
   const Wishlist = async (product) => {
     if (!email) return alert("Login first!");
     try {
-      const res = await fetch(`http://localhost:5000/wishlist?userEmail=${email}`);
+      const res = await fetch(`https://online-shopping-lmg9.onrender.com/wishlist?userEmail=${email}`);
       const data = await res.json();
       if (data.length) {
         const wishlist = data[0];
@@ -200,7 +200,7 @@ const getDiscountedPrice = (product) => {
         const updatedItems = exists
           ? wishlist.items.filter(i => i.productId !== product.id)
           : [...wishlist.items, { productId: product.id, name: product.name }];
-        await fetch(`http://localhost:5000/wishlist/${wishlist.id}`, {
+        await fetch(`https://online-shopping-lmg9.onrender.com/wishlist/${wishlist.id}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...wishlist, items: updatedItems }),
@@ -212,7 +212,7 @@ const getDiscountedPrice = (product) => {
           items: [{ productId: product.id, name: product.name }],
           createdAt: new Date().toISOString(),
         };
-        const res = await fetch("http://localhost:5000/wishlist", {
+        const res = await fetch("https://online-shopping-lmg9.onrender.com/wishlist", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newWishlist),
