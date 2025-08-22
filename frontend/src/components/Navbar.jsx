@@ -10,7 +10,7 @@ const Navbar = () => {
   
   
       const getproducts=() => {
-          fetch("http://localhost:5000/products")
+          fetch("https://online-shopping-lmg9.onrender.com/products")
           .then(response => response.json())
           .then(data => setProducts(data))
           .catch(error => {
