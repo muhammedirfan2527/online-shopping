@@ -10,7 +10,7 @@ console.log(categories)
   useEffect(() => {
   const fetchCategories = async () => {
     try {
-      const res = await fetch("http://localhost:5000/category");
+      const res = await fetch("https://online-shopping-lmg9.onrender.com/category");
       const data = await res.json();
       setCategories(data);
     } catch (err) {
@@ -37,7 +37,7 @@ console.log(categories)
   }
 
   try {
-    const response = await fetch("http://localhost:5000/category", {
+    const response = await fetch("https://online-shopping-lmg9.onrender.com/category", {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name })
