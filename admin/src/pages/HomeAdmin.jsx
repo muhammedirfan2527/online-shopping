@@ -3,7 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import NavbarAdmin from '../components/NavbarAdmin'
 import AddProduct from '../components/AddProduct'
 import UpdateProduct from '../components/UpdateProduct'
-import List_product from '../components/List_product'
+import ListProduct from '../components/ListProduct'
 import AddCategory from '../components/AddCategory'
 import ListCategory from '../components/ListCategory'
 import UpdateCategory from '../components/UpdateCategory'
@@ -18,9 +18,9 @@ const HomeAdmin = () => {
       <div>
         <NavbarAdmin />
         <Routes>
-          <Route path='/' element={<List_product/>}/>
+          <Route path='/' element={<ListProduct/>}/>
           <Route path='/add_product' element={<AddProduct/>}/>
-          <Route path='/list_product' element={<List_product/>}/>
+          <Route path='/list_product' element={<ListProduct/>}/>
           <Route path='/update_product/:id' element={<UpdateProduct/>} />
           <Route path='/add_category' element={<AddCategory/>} />
           <Route path='/list_category' element={<ListCategory/>} />
