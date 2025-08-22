@@ -37,8 +37,8 @@ const Login = () => {
 
     const url =
       currState === "Login"
-        ? "http://localhost:5000/login"
-        : "http://localhost:5000/signup";
+        ? "https://online-shopping-lmg9.onrender.com/login"
+        : "https://online-shopping-lmg9.onrender.com/signup";
 
     const payload =
       currState === "Login"
