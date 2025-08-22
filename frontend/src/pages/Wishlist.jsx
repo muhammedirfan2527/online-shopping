@@ -23,7 +23,7 @@ const Wishlist = () => {
           {wishlistItems.map((item) => (
             <div key={item.id} className="wishlist-item">
               <img
-                src={`http://localhost:5000/images/${item.image}`}
+                src={`https://online-shopping-lmg9.onrender.com/images/${item.image}`}
                 alt={item.name}
                 className="product-image"
               />
