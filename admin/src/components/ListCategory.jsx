@@ -6,7 +6,7 @@ const ListCategory = () => {
     const [menu,setMenu] = useState([])
     
         const getmenu= () =>{
-            fetch("http://localhost:5000/category")
+            fetch("https://online-shopping-lmg9.onrender.com/category")
             .then(response => response.json())
             .then(data => setMenu(data))
             .catch(error => {
@@ -16,7 +16,7 @@ const ListCategory = () => {
         useEffect(getmenu, [])
 
         const deleteProduct = async (id) =>{
-            const deletee = await fetch(`http://localhost:5000/category/${id}`,{
+            const deletee = await fetch(`https://online-shopping-lmg9.onrender.com/category/${id}`,{
                 method:'DELETE'
             })
             if(deletee.ok){
