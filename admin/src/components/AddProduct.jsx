@@ -11,7 +11,7 @@ const AddProduct = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:5000/category");
+        const res = await fetch("https://online-shopping-lmg9.onrender.com/category");
         const data = await res.json();
         setCategories(data);
       } catch (error) {
@@ -39,7 +39,7 @@ const AddProduct = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/products", {
+      const response = await fetch("https://online-shopping-lmg9.onrender.com/products", {
         method: "POST",
         body: formData, // ✅ send as multipart/form-data
       });
