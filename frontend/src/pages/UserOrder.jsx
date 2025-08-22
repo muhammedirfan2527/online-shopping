@@ -7,7 +7,7 @@ const UserOrder = () => {
   const [data, setData] = useState([])
 
   const fetchOrder = async () => {
-    fetch(`http://localhost:5000/order?email=${email}`)
+    fetch(`https://online-shopping-lmg9.onrender.com/order?email=${email}`)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(() => alert("Unable to fetch orders"));
