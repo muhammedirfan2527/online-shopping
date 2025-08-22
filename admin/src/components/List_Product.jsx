@@ -8,7 +8,7 @@ const List_product = () => {
 
   // Fetch products
   const getProducts = () => {
-    fetch("http://localhost:5000/products")
+    fetch("https://online-shopping-lmg9.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => {
@@ -20,7 +20,7 @@ const List_product = () => {
 
   // Fetch offers
   const getOffer = () => {
-    fetch("http://localhost:5000/offer")
+    fetch("https://online-shopping-lmg9.onrender.com/offer")
       .then((response) => response.json())
       .then((data) => setOffer(data))
       .catch((error) => {
@@ -33,7 +33,7 @@ const List_product = () => {
   // Delete product
   const deleteProduct = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/products/${id}`, {
+      const res = await fetch(`https://online-shopping-lmg9.onrender.com/products/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {
@@ -78,7 +78,7 @@ const List_product = () => {
           <tr key={item.id}>
             <td>
               <img
-                src={`http://localhost:5000/images/${item.image}`}
+                src={`https://online-shopping-lmg9.onrender.com/images/${item.image}`}
                 alt={item.name}
                 className="product-image"
               />
