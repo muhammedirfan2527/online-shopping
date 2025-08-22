@@ -17,7 +17,7 @@ const UpdateOffer = () => {
   useEffect(() => {
     const fetchNameProduct = async () => {
       try {
-        const response = await fetch("http://localhost:5000/products");
+        const response = await fetch("https://online-shopping-lmg9.onrender.com/products");
         const data = await response.json();
         setNameProduct(data);
       } catch (error) {
@@ -31,7 +31,7 @@ const UpdateOffer = () => {
   useEffect(() => {
     const fetchInfo = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/offer/${id}`);
+        const res = await fetch(`https://online-shopping-lmg9.onrender.com/offer/${id}`);
         const data = await res.json();
         setOffer(data);
       } catch (error) {
@@ -52,7 +52,7 @@ const UpdateOffer = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/offer/${id}`, {
+      const response = await fetch(`https://online-shopping-lmg9.onrender.com/offer/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(offer) // send updated offer object
