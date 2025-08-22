@@ -21,7 +21,7 @@ const Display = ({ menuDisplay }) => {
 
   // Fetch offers
   const getOffer = () => {
-    fetch("http://localhost:5000/offer")
+    fetch("https://online-shopping-lmg9.onrender.com/offer")
       .then((response) => response.json())
       .then((data) => setOffer(data))
       .catch(() => {
@@ -109,7 +109,7 @@ const Display = ({ menuDisplay }) => {
 
                 {/* Product info */}
                 <img
-                  src={`http://localhost:5000/images/${item.image}`}
+                  src={`https://online-shopping-lmg9.onrender.com/images/${item.image}`}
                   alt={item.name}
                   className="product-image"
                 />
