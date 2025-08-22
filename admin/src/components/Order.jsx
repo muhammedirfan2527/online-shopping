@@ -5,7 +5,7 @@ const Order = () => {
   const [userOrder, setUserOrder] = useState([]);
 
   const getUserOrder = () => {
-    fetch("http://localhost:5000/order")
+    fetch("https://online-shopping-lmg9.onrender.com/order")
       .then(response => response.json())
       .then(data => setUserOrder(data))
       .catch(() => alert("Unable to fetch orders"));
@@ -17,7 +17,7 @@ const Order = () => {
     try {
       const newStatus = event.target.value;
 
-      const response = await fetch(`http://localhost:5000/order/${orderId}`, {
+      const response = await fetch(`https://online-shopping-lmg9.onrender.com/order/${orderId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ Status: newStatus }),
