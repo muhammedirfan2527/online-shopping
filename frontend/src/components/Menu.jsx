@@ -7,7 +7,7 @@ const Menu = ({menuDisplay,setMenuDisplay}) => {
     const [menu,setMenu] = useState([])
 
     const getmenu= () =>{
-        fetch("http://localhost:5000/category")
+        fetch("https://online-shopping-lmg9.onrender.com/category")
         .then(response => response.json())
         .then(data => setMenu(data))
         .catch(error => {
