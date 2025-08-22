@@ -7,7 +7,7 @@ const ListOffer = () => {
 
   const getOffer = async () => {
     try {
-      const response = await fetch("http://localhost:5000/offer");
+      const response = await fetch("https://online-shopping-lmg9.onrender.com/offer");
       const data = await response.json();
       setOffer(data);
     } catch (error) {
@@ -20,7 +20,7 @@ const ListOffer = () => {
   }, []);
 
   const deleteOffer = async (id) => {
-    const res = await fetch(`http://localhost:5000/offer/${id}`, { method: 'DELETE' });
+    const res = await fetch(`https://online-shopping-lmg9.onrender.com/offer/${id}`, { method: 'DELETE' });
     if (res.ok) {
       setOffer(prev => prev.filter((o) => o.id !== id));
       console.log("Deleted successfully");
