@@ -19,7 +19,7 @@ const Cart = () => {
   console.log(totalOffer)
   // Fetch offers
   const getOffer = () => {
-    fetch("http://localhost:5000/offer")
+    fetch("https://online-shopping-lmg9.onrender.com/offer")
       .then((response) => response.json())
       .then((data) => setOffer(data))
       .catch(() => {
@@ -31,7 +31,7 @@ const Cart = () => {
 
 const getDataCart = () => {
   if (!email) return;
-  fetch(`http://localhost:5000/cart?userEmail=${email}`)
+  fetch(`https://online-shopping-lmg9.onrender.com/cart?userEmail=${email}`)
     .then((response) => response.json())
     .then((data) => setDataCart(data.length ? data[0] : null))
     .catch(() => {
@@ -79,7 +79,7 @@ useEffect(getDataCart, [email]);
 
 
     try {
-      let response = await fetch("http://localhost:5000/order", {
+      let response = await fetch("https://online-shopping-lmg9.onrender.com/order", {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData)
@@ -87,7 +87,7 @@ useEffect(getDataCart, [email]);
 
       if (response.ok) {
         // Clear cart after successful order
-        await fetch(`http://localhost:5000/cart/${cart.id}`, {
+        await fetch(`https://online-shopping-lmg9.onrender.com/cart/${cart.id}`, {
           method: 'DELETE'
         });
 
