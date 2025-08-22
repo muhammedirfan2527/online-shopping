@@ -10,7 +10,7 @@ const AddOffer = () => {
   useEffect(() => {
     const fetchNameProduct = async () => {
       try {
-        const response = await fetch("http://localhost:5000/products");
+        const response = await fetch("https://online-shopping-lmg9.onrender.com/products");
         const data = await response.json();
         setNameProduct(data);
       } catch (error) {
@@ -22,7 +22,7 @@ const AddOffer = () => {
 
   const getOffer = async () => {
       try {
-        const response = await fetch("http://localhost:5000/offer");
+        const response = await fetch("https://online-shopping-lmg9.onrender.com/offer");
         const data = await response.json();
         setOffer(data);
       } catch (error) {
@@ -56,7 +56,7 @@ if (offer.some(o => o.name.toLowerCase() === name)) {
 }
 
     try {
-      const response = await fetch("http://localhost:5000/offer", {
+      const response = await fetch("https://online-shopping-lmg9.onrender.com/offer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(offerData),
