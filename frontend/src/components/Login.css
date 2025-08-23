@@ -128,7 +128,7 @@ p span:hover {
 }
 
 /* Mobile (≤ 430px) */
-@media (max-width: 430px) {
+@media (max-width: 450px) {
   .login {
     align-items: flex-start;   /* push form to top */
     padding-top: 2rem;
