@@ -126,7 +126,7 @@ const getDiscountedPrice = (product) => {
       const existingItem = cart.items.find((i) => i.productId === product.id);
       const updatedItems = existingItem
         ? cart.items.map((i) => i.productId === product.id ? { ...i, quantity: i.quantity + 1 } : i)
-        : [...cart.items, { productId: product.id, name: product.name, price: priceToUse, quantity: 1 }];
+        : [...cart.items, { productId: product.id, name: product.name, price: product.price, quantity: 1 }];
 
       const updatedCart = { 
         ...cart, 
@@ -144,7 +144,7 @@ const getDiscountedPrice = (product) => {
     } else {
       const newCart = {
         userEmail: email,
-        items: [{ productId: product.id, name: product.name, price: priceToUse, quantity: 1 }],
+        items: [{ productId: product.id, name: product.name, price: product.price, quantity: 1 }],
         total: priceToUse,
       };
       const res = await fetch("https://online-shopping-lmg9.onrender.com/cart", {
