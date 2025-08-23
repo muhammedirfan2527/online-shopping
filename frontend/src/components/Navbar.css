@@ -107,7 +107,7 @@
     /* border: 1px solid black; */
   }
 }
-@media (max-width:470px) {
+@media (max-width:500px) {
     .navbar-logo{
       width: 40%;
       margin-top: -50px;
