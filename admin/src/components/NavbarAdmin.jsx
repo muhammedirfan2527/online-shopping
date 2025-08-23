@@ -1,8 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './NavbarAdmin.css';
 
 const NavbarAdmin = () => {
+  const navigate = useNavigate();
+
+  const logout = () => {
+    navigate("/");
+  };
+
   return (
     <nav className="admin-navbar">
       <h2 className="logo">Admin Panel</h2>
@@ -14,6 +20,11 @@ const NavbarAdmin = () => {
         <NavLink to="/add_offer" className={({ isActive }) => isActive ? "active" : ""}>Add Offer</NavLink>
         <NavLink to="/list_offer" className={({ isActive }) => isActive ? "active" : ""}>List Offer</NavLink>
         <NavLink to="/order_admin" className={({ isActive }) => isActive ? "active" : ""}>List Order</NavLink>
+
+        <div className="navbar-login">
+              <button onClick={logout} className="navbar-link logout-btn">Logout</button>
+            
+        </div>
       </div>
     </nav>
   );
